@@ -1,10 +1,18 @@
+import css from "./FriendListItem.module.css";
+
 function FriendListItem({ friend: { avatar, name, isOnline } }) {
   return (
-    <div>
-      <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p>{isOnline ? <span>Online</span> : <span>Offline</span>}</p>
-    </div>
+    <>
+      <img src={avatar} alt="Avatar" width="100" />
+      <p className={css.name}>{name}</p>
+      <p className={css.line}>
+        {isOnline ? (
+          <span className={css.onLine}>Online</span>
+        ) : (
+          <span className={css.offLine}>Offline</span>
+        )}
+      </p>
+    </>
   );
 }
 

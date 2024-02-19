@@ -1,0 +1,16 @@
+.name {
+    margin-top: 16px;
+    font-size: 32px;
+}
+
+.line {
+    font-size: 20px;
+}
+
+.onLine {
+    color: green;
+}
+
+.offLine {
+    color: red;
+}

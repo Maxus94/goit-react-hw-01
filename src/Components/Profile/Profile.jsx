@@ -1,3 +1,5 @@
+import css from "./Profile.module.css";
+
 function Profile({
   name,
   tag,
@@ -6,26 +8,26 @@ function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div>
+    <div className={css.container}>
       <div>
-        <img src={image} alt={name} />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <img className={css.image} src={image} alt={name} width="320" />
+        <p className={css.name}>{name}</p>
+        <p className={css.subname}>{tag}</p>
+        <p className={css.subname}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{followers}</span>
+      <ul className={css.statList}>
+        <li className={css.statItem}>
+          <span className={css.itemName}>Followers</span>
+          <span className={css.itemValue}>{followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{views}</span>
+        <li className={css.statItem}>
+          <span className={css.itemName}>Views</span>
+          <span className={css.itemValue}>{views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
+        <li className={css.statItem}>
+          <span className={css.itemName}>Likes</span>
+          <span className={css.itemValue}>{likes}</span>
         </li>
       </ul>
     </div>
