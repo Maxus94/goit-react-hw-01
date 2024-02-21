@@ -30,8 +30,5 @@
     text-transform: capitalize;
     padding-left: 80px;
     width: calc(100% / 3);
-}
-
-.transactionsPropertiesCell {
-    text-align: center;
+    text-align: left;
 }

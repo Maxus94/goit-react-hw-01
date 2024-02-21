@@ -4,7 +4,7 @@ function Profile({
   name,
   tag,
   location,
-  image,
+  image = "https://dummyimage.com/320x320/2a2a2a/ffffff&text=User+image+placeholder",
   stats: { followers, views, likes },
 }) {
   return (

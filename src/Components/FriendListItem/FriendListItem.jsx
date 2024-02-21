@@ -1,6 +1,6 @@
 import css from "./FriendListItem.module.css";
 
-function FriendListItem({ friend: { avatar, name, isOnline } }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
     <>
       <img src={avatar} alt="Avatar" width="100" />

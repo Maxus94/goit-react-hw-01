@@ -44,7 +44,10 @@
     border-style: solid;
     border-left: none;
     border-bottom: none;
-    text-align: center;
+}
+
+.statItem:last-child {
+    border-right: none;
 }
 
 .itemName {
